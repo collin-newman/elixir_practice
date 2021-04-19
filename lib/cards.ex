@@ -30,9 +30,9 @@ defmodule Cards do
   ## Examples
 
         iex> deck = Cards.create_deck
-        iex> {hand, deck} = Cards.shuffle(deck, 2)
+        iex> {hand, deck} = Cards.deal(deck, 2)
         iex> hand
-        ["Ace of Spades", "King of Spades"]
+        ["Ace of Clubs", "Two of Clubs"]
   """
 
   def deal(deck, hand_size) do
